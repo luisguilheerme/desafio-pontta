@@ -1,0 +1,16 @@
+<mat-card class="card">
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" name="name" [(ngModel)]="client.name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" name="email" [(ngModel)]="client.email">
+        </mat-form-field>
+        <button mat-raised-button class="btn" (click)="saveClient()">
+            Salvar
+        </button>
+        <button mat-raised-button class="btn" (click)="goBack()">
+            Cancelar
+        </button>
+    </form>
+</mat-card>

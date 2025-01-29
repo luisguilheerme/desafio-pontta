@@ -1,0 +1,16 @@
+<mat-card class="card">
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" name="name" [(ngModel)]="product.name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" name="description" [(ngModel)]="product.description">
+        </mat-form-field>
+        <button mat-raised-button class="btn" (click)="saveProduct()">
+            Salvar
+        </button>
+        <button mat-raised-button class="btn" (click)="goBack()">
+            Cancelar
+        </button>
+    </form>
+</mat-card>

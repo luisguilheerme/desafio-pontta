@@ -1,0 +1,16 @@
+services:
+  pontta-postgres:
+    image: postgres:latest
+    container_name: pontta-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: pontta
+    ports:
+      - "5432:5432"
+    volumes:
+      - pontta-data:/var/lib/postgresql/data
+
+volumes:
+  pontta-data:
+

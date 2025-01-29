@@ -1,0 +1,12 @@
+.card {
+    margin: 15px;
+}
+
+.material-icons {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
